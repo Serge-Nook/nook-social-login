@@ -46,6 +46,7 @@ class NookSL_Users {
 				'meta_value'  => (string) $id, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
 				'number'      => 1,
 				'count_total' => false,
+				'blog_id'     => 0,
 			)
 		);
 		return $users ? $users[0] : null;
