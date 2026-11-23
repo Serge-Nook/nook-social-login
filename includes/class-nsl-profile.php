@@ -18,7 +18,7 @@ class NookSL_Profile {
 	public function __construct() {
 		add_action( 'show_user_profile', array( $this, 'section' ) );
 		add_action( 'edit_user_profile', array( $this, 'section' ) );
-		add_action( 'admin_post_nsl_unlink', array( $this, 'unlink' ) );
+		add_action( 'admin_post_nooksl_unlink', array( $this, 'unlink' ) );
 		add_action( 'admin_notices', array( $this, 'notices' ) );
 		add_filter( 'pre_get_avatar_data', array( $this, 'avatar' ), 10, 2 );
 	}
