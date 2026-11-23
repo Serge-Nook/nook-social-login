@@ -83,11 +83,11 @@ class NookSL_Buttons {
 	 * @return string
 	 */
 	public static function current_url() {
-		$uri = isset( $_SERVER['REQUEST_URI'] ) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '/';
+		$uri  = isset( $_SERVER['REQUEST_URI'] ) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '/';
 		$home = wp_parse_url( home_url() );
 		$host = $home['host'] . ( isset( $home['port'] ) ? ':' . $home['port'] : '' );
 		$url  = set_url_scheme( 'http://' . $host . $uri );
-		$url = remove_query_arg( array( 'nooksl_msg', 'loggedout', 'reauth' ), $url );
+		$url  = remove_query_arg( array( 'nooksl_msg', 'loggedout', 'reauth' ), $url );
 		return wp_validate_redirect( $url, home_url( '/' ) );
 	}
 
