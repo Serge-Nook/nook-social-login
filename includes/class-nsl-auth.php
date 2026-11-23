@@ -433,6 +433,11 @@ class NookSL_Auth {
 		$errors   = new WP_Error();
 		$email    = '';
 
+		if ( ! $provider || ! $provider->is_active() || ! NookSL_Settings::get( 'allow_register' ) ) {
+			delete_transient( 'nooksl_pending_' . $key );
+			$this->fail( __( 'This login method is not available.', 'nook-social-login' ) );
+		}
+
 		if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD'] ) {
 			check_admin_referer( 'nooksl_email_' . $key );
 			$email = isset( $_POST['nooksl_email'] ) ? sanitize_email( wp_unslash( $_POST['nooksl_email'] ) ) : '';
