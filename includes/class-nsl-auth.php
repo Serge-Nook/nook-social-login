@@ -298,7 +298,7 @@ class NookSL_Auth {
 		if ( is_wp_error( $allowed ) ) {
 			$this->fail( $allowed->get_error_message(), $flow );
 		}
-		if ( ! $allowed ) {
+		if ( ! $allowed || ( is_multisite() && is_user_spammy( $user ) ) ) {
 			$this->fail( __( 'Login is not allowed for this account.', 'nook-social-login' ), $flow );
 		}
 
