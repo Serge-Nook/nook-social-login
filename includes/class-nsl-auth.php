@@ -207,7 +207,11 @@ class NookSL_Auth {
 		$email = sanitize_email( $profile['email'] );
 		if ( '' !== $email && email_exists( $email ) ) {
 			$existing = get_user_by( 'email', $email );
-			if ( $existing && $profile['email_verified'] && NookSL_Settings::get( 'link_by_email' ) && ! $this->is_privileged_user( $existing ) ) {
+			$can_link = $existing && $profile['email_verified'] && NookSL_Settings::get( 'link_by_email' )
+				&& ! $this->is_privileged_user( $existing )
+				&& ! get_user_meta( $existing->ID, 'nooksl_email_unverified', true )
+				&& '' === (string) get_user_meta( $existing->ID, NookSL_Users::id_key( $id ), true );
+			if ( $can_link ) {
 				NookSL_Users::link( $existing->ID, $id, $profile );
 				$this->sign_in( $existing, $flow );
 			}
@@ -264,6 +268,9 @@ class NookSL_Auth {
 		$user_id = NookSL_Users::register( $id, $profile, $email );
 		if ( is_wp_error( $user_id ) ) {
 			$this->fail( $user_id->get_error_message(), $flow );
+		}
+		if ( empty( $profile['email_verified'] ) ) {
+			update_user_meta( $user_id, 'nooksl_email_unverified', 1 );
 		}
 		$flow['new_user'] = true;
 		$this->sign_in( get_user_by( 'id', $user_id ), $flow );
