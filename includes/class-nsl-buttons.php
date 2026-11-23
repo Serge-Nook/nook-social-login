@@ -273,7 +273,7 @@ class NookSL_Buttons {
 			array(
 				'context'     => 'shortcode',
 				'redirect_to' => '' !== $atts['redirect'] ? wp_validate_redirect( esc_url_raw( $atts['redirect'] ), '' ) : self::current_url(),
-				'link'        => $link,
+				'link'        => $link && is_user_logged_in(),
 				'heading'     => $atts['heading'],
 				'style'       => $atts['style'],
 				'providers'   => array_filter( array_map( 'sanitize_key', explode( ',', (string) $atts['providers'] ) ) ),
