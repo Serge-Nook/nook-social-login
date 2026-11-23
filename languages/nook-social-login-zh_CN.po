@@ -1,0 +1,446 @@
+# Copyright (C) 2026 Горшков Сергей Владимирович
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nook Social Login 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nook-social-login\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-23T23:48:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: nook-social-login\n"
+
+#. Plugin Name of the plugin
+#: nook-social-login.php
+msgid "Nook Social Login"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: nook-social-login.php
+msgid "https://nookbat.ru/"
+msgstr ""
+
+#. Description of the plugin
+#: nook-social-login.php
+msgid "Registration and login via VK ID, Steam, Battle.net, Yandex ID, Google, Twitch and Discord."
+msgstr "通过 VK ID、Steam、Battle.net、Yandex ID、Google、Twitch 和 Discord 注册和登录。"
+
+#. Author of the plugin
+#: nook-social-login.php
+msgid "Горшков Сергей Владимирович"
+msgstr ""
+
+#: includes/class-nsl-admin.php:31
+#: includes/class-nsl-admin.php:32
+#: includes/class-nsl-admin.php:159
+msgid "Social Login"
+msgstr "社交登录"
+
+#: includes/class-nsl-admin.php:66
+msgid "Copied"
+msgstr "已复制"
+
+#: includes/class-nsl-admin.php:160
+msgid "Let visitors register and log in with VK ID, Steam, Battle.net, Yandex ID, Google, Twitch and Discord. Enable a network, create an application in its developer console with the redirect URL shown below and paste the keys."
+msgstr "访客可以通过 VK ID、Steam、Battle.net、Yandex ID、Google、Twitch 和 Discord 注册和登录。启用某个平台，在其开发者控制台中使用下方的重定向 URL 创建应用，然后粘贴密钥。"
+
+#: includes/class-nsl-admin.php:165
+msgid "Social networks"
+msgstr "社交平台"
+
+#: includes/class-nsl-admin.php:172
+msgid "General"
+msgstr "常规"
+
+#: includes/class-nsl-admin.php:175
+msgid "Registration"
+msgstr "注册"
+
+#: includes/class-nsl-admin.php:178
+msgid "Create a new account on the first login"
+msgstr "首次登录时创建新账户"
+
+#: includes/class-nsl-admin.php:178
+msgid "Works even when \"Anyone can register\" is turned off in General Settings."
+msgstr "即使在常规设置中关闭了“任何人都可以注册”也有效。"
+
+#: includes/class-nsl-admin.php:179
+msgid "Ask for an e-mail when the network does not share it (Steam, Battle.net)"
+msgstr "当平台不提供电子邮件时要求填写（Steam、Battle.net）"
+
+#: includes/class-nsl-admin.php:180
+msgid "Link to an existing account with the same confirmed e-mail"
+msgstr "关联到具有相同已验证电子邮件的现有账户"
+
+#: includes/class-nsl-admin.php:180
+msgid "Administrators and user managers are never linked automatically: they link networks in their profile."
+msgstr "管理员和用户管理者不会被自动关联：他们需要在个人资料中关联社交平台。"
+
+#: includes/class-nsl-admin.php:185
+msgid "Role of new users"
+msgstr "新用户角色"
+
+#: includes/class-nsl-admin.php:195
+msgid "Redirect after login"
+msgstr "登录后跳转"
+
+#: includes/class-nsl-admin.php:198
+msgid "Leave empty to return the user to the page where the button was clicked."
+msgstr "留空则返回点击按钮时所在的页面。"
+
+#: includes/class-nsl-admin.php:202
+msgid "Show buttons"
+msgstr "显示按钮"
+
+#: includes/class-nsl-admin.php:205
+msgid "On the login form"
+msgstr "在登录表单上"
+
+#: includes/class-nsl-admin.php:206
+msgid "On the registration form"
+msgstr "在注册表单上"
+
+#: includes/class-nsl-admin.php:207
+msgid "Above the comment form for guests"
+msgstr "在访客评论表单上方"
+
+#: includes/class-nsl-admin.php:208
+msgid "On WooCommerce login and registration forms"
+msgstr "在 WooCommerce 登录和注册表单上"
+
+#. translators: 1: shortcode, 2: shortcode with attributes.
+#: includes/class-nsl-admin.php:214
+#, php-format
+msgid "Anywhere else: shortcode %1$s, for example %2$s. Use link=\"1\" to let logged-in users link more networks."
+msgstr "其他位置：使用短代码 %1$s，例如 %2$s。添加 link=\"1\" 可让已登录用户关联更多平台。"
+
+#: includes/class-nsl-admin.php:223
+msgid "Button style"
+msgstr "按钮样式"
+
+#: includes/class-nsl-admin.php:226
+msgid "Icon and text"
+msgstr "图标和文字"
+
+#: includes/class-nsl-admin.php:227
+msgid "Icons only"
+msgstr "仅图标"
+
+#: includes/class-nsl-admin.php:232
+msgid "Other"
+msgstr "其他"
+
+#: includes/class-nsl-admin.php:235
+msgid "Use the social network avatar"
+msgstr "使用社交平台头像"
+
+#: includes/class-nsl-admin.php:236
+msgid "Delete linked accounts data when the plugin is deleted"
+msgstr "删除插件时删除已关联账户的数据"
+
+#. translators: 1: plugin version, 2: author name, 3: author site link.
+#: includes/class-nsl-admin.php:249
+#, php-format
+msgid "Nook Social Login %1$s · Author: %2$s · Site: %3$s"
+msgstr "Nook Social Login %1$s · 作者：%2$s · 网站：%3$s"
+
+#: includes/class-nsl-admin.php:251
+msgid "Gorshkov Sergey Vladimirovich"
+msgstr "Горшков Сергей Владимирович"
+
+#: includes/class-nsl-admin.php:269
+msgid "Active"
+msgstr "已启用"
+
+#: includes/class-nsl-admin.php:272
+msgid "Keys are missing"
+msgstr "缺少密钥"
+
+#: includes/class-nsl-admin.php:275
+msgid "Off"
+msgstr "已关闭"
+
+#: includes/class-nsl-admin.php:287
+msgid "Enabled"
+msgstr "启用"
+
+#: includes/class-nsl-admin.php:291
+msgid "Open the developer console"
+msgstr "打开开发者控制台"
+
+#: includes/class-nsl-admin.php:312
+msgid "Return URL (informational)"
+msgstr "返回 URL（仅供参考）"
+
+#: includes/class-nsl-admin.php:312
+msgid "Redirect URL"
+msgstr "重定向 URL"
+
+#: includes/class-nsl-admin.php:315
+msgid "Copy"
+msgstr "复制"
+
+#: includes/class-nsl-auth.php:113
+#: includes/class-nsl-auth.php:159
+msgid "This login method is not available."
+msgstr "此登录方式不可用。"
+
+#: includes/class-nsl-auth.php:121
+msgid "The link has expired. Please try again."
+msgstr "链接已过期，请重试。"
+
+#: includes/class-nsl-auth.php:169
+#: includes/class-nsl-auth.php:420
+msgid "The login session has expired or was opened in another browser. Please try again."
+msgstr "登录会话已过期或在其他浏览器中打开，请重试。"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-auth.php:195
+#, php-format
+msgid "This %s account is already linked to another user."
+msgstr "此 %s 账户已关联到其他用户。"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-auth.php:199
+#, php-format
+msgid "%s account linked."
+msgstr "已关联 %s 账户。"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-auth.php:217
+#: includes/class-nsl-auth.php:436
+#, php-format
+msgid "An account with this e-mail address already exists. Log in with your password and link %s in your profile."
+msgstr "使用此电子邮件的账户已存在。请使用密码登录，并在个人资料中关联 %s。"
+
+#: includes/class-nsl-auth.php:225
+msgid "Registration through social networks is disabled on this site. Log in with your password and link the account in your profile."
+msgstr "本站已禁用通过社交平台注册。请使用密码登录，并在个人资料中关联账户。"
+
+#: includes/class-nsl-auth.php:295
+msgid "Login is not allowed for this account."
+msgstr "此账户不允许登录。"
+
+#: includes/class-nsl-auth.php:430
+msgid "Please enter a valid e-mail address."
+msgstr "请输入有效的电子邮件地址。"
+
+#: includes/class-nsl-auth.php:447
+msgid "Enter your e-mail"
+msgstr "输入电子邮件"
+
+#. translators: 1: user name, 2: provider name.
+#: includes/class-nsl-auth.php:467
+#, php-format
+msgid "Hello, %1$s! %2$s did not share your e-mail address. Enter it to finish registration."
+msgstr "你好，%1$s！%2$s 未提供你的电子邮件地址。请输入以完成注册。"
+
+#: includes/class-nsl-auth.php:475
+msgid "E-mail"
+msgstr "电子邮件"
+
+#: includes/class-nsl-auth.php:480
+msgid "Continue"
+msgstr "继续"
+
+#: includes/class-nsl-buttons.php:125
+msgid "Link a social account"
+msgstr "关联社交账户"
+
+#: includes/class-nsl-buttons.php:125
+msgid "or log in with"
+msgstr "或使用以下方式登录"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-buttons.php:137
+#: includes/class-nsl-profile.php:86
+#, php-format
+msgid "Link %s"
+msgstr "关联 %s"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-buttons.php:139
+#, php-format
+msgid "Log in with %s"
+msgstr "使用 %s 登录"
+
+#: includes/class-nsl-buttons.php:204
+msgid "or register with"
+msgstr "或使用以下方式注册"
+
+#: includes/class-nsl-buttons.php:224
+msgid "Log in to comment:"
+msgstr "登录后发表评论："
+
+#: includes/class-nsl-oauth2-provider.php:131
+#: includes/providers/class-nsl-provider-steam.php:142
+msgid "Login was cancelled."
+msgstr "登录已取消。"
+
+#: includes/class-nsl-oauth2-provider.php:137
+msgid "The authorization code is missing."
+msgstr "缺少授权码。"
+
+#: includes/class-nsl-oauth2-provider.php:149
+#: includes/providers/class-nsl-provider-twitch.php:99
+#: includes/providers/class-nsl-provider-vk.php:140
+msgid "The provider did not return a user ID."
+msgstr "提供方未返回用户 ID。"
+
+#: includes/class-nsl-oauth2-provider.php:194
+msgid "The provider did not return an access token."
+msgstr "提供方未返回访问令牌。"
+
+#: includes/class-nsl-plugin.php:73
+msgid "Settings"
+msgstr "设置"
+
+#: includes/class-nsl-profile.php:46
+msgid "Social accounts"
+msgstr "社交账户"
+
+#: includes/class-nsl-profile.php:61
+msgid "Linked:"
+msgstr "已关联："
+
+#: includes/class-nsl-profile.php:81
+msgid "Unlink"
+msgstr "解除关联"
+
+#: includes/class-nsl-profile.php:90
+msgid "Not linked"
+msgstr "未关联"
+
+#: includes/class-nsl-profile.php:107
+msgid "Sorry, you are not allowed to edit this user."
+msgstr "抱歉，你无权编辑此用户。"
+
+#: includes/class-nsl-profile.php:116
+msgid "This is the only way to log in to this account. Add an e-mail address first so that a password can be set."
+msgstr "这是登录此账户的唯一方式。请先添加电子邮件地址以便设置密码。"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-profile.php:124
+#, php-format
+msgid "%s account unlinked."
+msgstr "已解除关联 %s 账户。"
+
+#. translators: 1: provider name, 2: HTTP status code, 3: error details.
+#: includes/class-nsl-provider.php:195
+#, php-format
+msgid "%1$s returned an error (HTTP %2$d). %3$s"
+msgstr "%1$s 返回错误（HTTP %2$d）。%3$s"
+
+#: includes/providers/class-nsl-provider-battlenet.php:26
+msgid "Battle.net"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-battlenet.php:42
+#: includes/providers/class-nsl-provider-discord.php:42
+#: includes/providers/class-nsl-provider-google.php:42
+#: includes/providers/class-nsl-provider-twitch.php:42
+msgid "Client ID"
+msgstr "客户端 ID"
+
+#: includes/providers/class-nsl-provider-battlenet.php:46
+#: includes/providers/class-nsl-provider-discord.php:46
+#: includes/providers/class-nsl-provider-google.php:46
+#: includes/providers/class-nsl-provider-twitch.php:46
+#: includes/providers/class-nsl-provider-yandex.php:46
+msgid "Client secret"
+msgstr "客户端密钥"
+
+#: includes/providers/class-nsl-provider-battlenet.php:50
+msgid "Region"
+msgstr "区域"
+
+#: includes/providers/class-nsl-provider-battlenet.php:53
+msgid "Global (America, Europe, Korea, Taiwan)"
+msgstr "全球（美洲、欧洲、韩国、台湾）"
+
+#: includes/providers/class-nsl-provider-battlenet.php:54
+msgid "China"
+msgstr "中国"
+
+#: includes/providers/class-nsl-provider-battlenet.php:71
+msgid "Create a client in the Blizzard developer portal and add the redirect URL below. Battle.net does not share e-mail addresses, so new users are asked for one."
+msgstr "在 Blizzard 开发者门户中创建客户端并添加下方的重定向 URL。Battle.net 不提供电子邮件地址，因此会要求新用户填写。"
+
+#: includes/providers/class-nsl-provider-discord.php:26
+msgid "Discord"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-discord.php:63
+msgid "Create an application in the Discord Developer Portal, open OAuth2, copy Client ID and Client Secret and add the redirect URL below to Redirects."
+msgstr "在 Discord Developer Portal 中创建应用，打开 OAuth2，复制 Client ID 和 Client Secret，并将下方的重定向 URL 添加到 Redirects。"
+
+#: includes/providers/class-nsl-provider-google.php:26
+msgid "Google"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-google.php:63
+msgid "In Google Cloud Console configure the OAuth consent screen, then create an \"OAuth client ID\" of type \"Web application\" and add the redirect URL below to \"Authorized redirect URIs\"."
+msgstr "在 Google Cloud Console 中配置 OAuth 同意屏幕，然后创建类型为“Web 应用”的“OAuth 客户端 ID”，并将下方的重定向 URL 添加到“已获授权的重定向 URI”。"
+
+#: includes/providers/class-nsl-provider-steam.php:28
+msgid "Steam"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-steam.php:44
+msgid "Steam Web API key (optional)"
+msgstr "Steam Web API 密钥（可选）"
+
+#: includes/providers/class-nsl-provider-steam.php:46
+msgid "Without a key the nickname and avatar are read from the public community profile."
+msgstr "没有密钥时，将从公开的社区资料中读取昵称和头像。"
+
+#: includes/providers/class-nsl-provider-steam.php:69
+msgid "Steam needs no application: just enable it. Steam does not share e-mail addresses, so new users are asked for one. A Web API key is optional."
+msgstr "Steam 无需创建应用：直接启用即可。Steam 不提供电子邮件地址，因此会要求新用户填写。Web API 密钥为可选项。"
+
+#: includes/providers/class-nsl-provider-steam.php:150
+msgid "Invalid response from Steam."
+msgstr "Steam 返回了无效响应。"
+
+#: includes/providers/class-nsl-provider-steam.php:172
+msgid "Steam did not confirm the login."
+msgstr "Steam 未确认登录。"
+
+#: includes/providers/class-nsl-provider-twitch.php:26
+msgid "Twitch"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-twitch.php:63
+msgid "Register an application in the Twitch developer console (category \"Website Integration\", client type \"Confidential\") and add the redirect URL below as OAuth Redirect URL."
+msgstr "在 Twitch 开发者控制台中注册应用（类别为 \"Website Integration\"，客户端类型为 \"Confidential\"），并将下方的重定向 URL 添加为 OAuth Redirect URL。"
+
+#: includes/providers/class-nsl-provider-vk.php:26
+msgid "VK ID"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-vk.php:42
+msgid "App ID"
+msgstr "应用 ID"
+
+#: includes/providers/class-nsl-provider-vk.php:66
+msgid "Create a \"Web\" application in VK ID for business, enable the e-mail permission, set the base domain of the site and add the redirect URL below to the trusted redirect URLs. Copy the App ID."
+msgstr "在 VK ID for business 中创建“Web”应用，启用电子邮件权限，设置网站的基础域名，并将下方的重定向 URL 添加到受信任的重定向 URL。复制应用 ID。"
+
+#: includes/providers/class-nsl-provider-yandex.php:26
+msgid "Yandex ID"
+msgstr "Yandex ID"
+
+#: includes/providers/class-nsl-provider-yandex.php:42
+msgid "ClientID"
+msgstr "ClientID"
+
+#: includes/providers/class-nsl-provider-yandex.php:63
+msgid "Create a web service application in Yandex OAuth, grant access to the e-mail address, user name and avatar, and add the redirect URL below as Redirect URI."
+msgstr "在 Yandex OAuth 中创建 Web 服务应用，授予电子邮件地址、用户名和头像的访问权限，并将下方的重定向 URL 添加为 Redirect URI。"
