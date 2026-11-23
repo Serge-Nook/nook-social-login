@@ -3,7 +3,7 @@
  * Plugin Name:       Nook Social Login
  * Plugin URI:        https://nookbat.ru/
  * Description:       Registration and login via VK ID, Steam, Battle.net, Yandex ID, Google, Twitch and Discord.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Requires at least: 6.3
  * Requires PHP:      7.4
  * Author:            Горшков Сергей Владимирович
@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'NOOKSL_VERSION', '0.1.0' );
+define( 'NOOKSL_VERSION', '0.1.1' );
 define( 'NOOKSL_FILE', __FILE__ );
 define( 'NOOKSL_DIR', plugin_dir_path( __FILE__ ) );
 define( 'NOOKSL_URL', plugin_dir_url( __FILE__ ) );
