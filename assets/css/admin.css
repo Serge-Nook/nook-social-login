@@ -1,0 +1,59 @@
+.nsl-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	gap: 16px;
+	max-width: 1400px;
+}
+.nsl-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	padding: 14px 16px;
+}
+.nsl-card-head {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.nsl-status {
+	margin-left: auto;
+	font-size: 12px;
+	padding: 2px 8px;
+	border-radius: 10px;
+	background: #f0f0f1;
+	color: #50575e;
+}
+.nsl-status.is-active {
+	background: #d1f0d9;
+	color: #00611f;
+}
+.nsl-status.is-warning {
+	background: #fcf0d4;
+	color: #8a5a00;
+}
+.nsl-enable {
+	font-weight: 600;
+}
+.nsl-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+.nsl-field .description {
+	display: block;
+	margin-top: 3px;
+}
+.nsl-copy {
+	display: flex;
+	gap: 6px;
+}
+.nsl-copy input {
+	background: #f6f7f7;
+	font-size: 12px;
+}
+.nsl-about {
+	margin-top: 24px;
+	color: #646970;
+}

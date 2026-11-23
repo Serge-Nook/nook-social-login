@@ -1,0 +1,446 @@
+# Copyright (C) 2026 Горшков Сергей Владимирович
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nook Social Login 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nook-social-login\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-23T23:48:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: nook-social-login\n"
+
+#. Plugin Name of the plugin
+#: nook-social-login.php
+msgid "Nook Social Login"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: nook-social-login.php
+msgid "https://nookbat.ru/"
+msgstr ""
+
+#. Description of the plugin
+#: nook-social-login.php
+msgid "Registration and login via VK ID, Steam, Battle.net, Yandex ID, Google, Twitch and Discord."
+msgstr "Регистрация и вход через VK ID, Steam, Battle.net, Яндекс ID, Google, Twitch и Discord."
+
+#. Author of the plugin
+#: nook-social-login.php
+msgid "Горшков Сергей Владимирович"
+msgstr ""
+
+#: includes/class-nsl-admin.php:31
+#: includes/class-nsl-admin.php:32
+#: includes/class-nsl-admin.php:159
+msgid "Social Login"
+msgstr "Вход через соцсети"
+
+#: includes/class-nsl-admin.php:66
+msgid "Copied"
+msgstr "Скопировано"
+
+#: includes/class-nsl-admin.php:160
+msgid "Let visitors register and log in with VK ID, Steam, Battle.net, Yandex ID, Google, Twitch and Discord. Enable a network, create an application in its developer console with the redirect URL shown below and paste the keys."
+msgstr "Посетители смогут регистрироваться и входить через VK ID, Steam, Battle.net, Яндекс ID, Google, Twitch и Discord. Включите соцсеть, создайте приложение в её консоли разработчика с указанным ниже адресом перенаправления и вставьте ключи."
+
+#: includes/class-nsl-admin.php:165
+msgid "Social networks"
+msgstr "Социальные сети"
+
+#: includes/class-nsl-admin.php:172
+msgid "General"
+msgstr "Общие"
+
+#: includes/class-nsl-admin.php:175
+msgid "Registration"
+msgstr "Регистрация"
+
+#: includes/class-nsl-admin.php:178
+msgid "Create a new account on the first login"
+msgstr "Создавать новый аккаунт при первом входе"
+
+#: includes/class-nsl-admin.php:178
+msgid "Works even when \"Anyone can register\" is turned off in General Settings."
+msgstr "Работает, даже если в общих настройках выключено «Любой может зарегистрироваться»."
+
+#: includes/class-nsl-admin.php:179
+msgid "Ask for an e-mail when the network does not share it (Steam, Battle.net)"
+msgstr "Запрашивать e-mail, если соцсеть его не передаёт (Steam, Battle.net)"
+
+#: includes/class-nsl-admin.php:180
+msgid "Link to an existing account with the same confirmed e-mail"
+msgstr "Привязывать к существующему аккаунту с тем же подтверждённым e-mail"
+
+#: includes/class-nsl-admin.php:180
+msgid "Administrators and user managers are never linked automatically: they link networks in their profile."
+msgstr "Администраторы и управляющие пользователями никогда не привязываются автоматически — они привязывают соцсети в своём профиле."
+
+#: includes/class-nsl-admin.php:185
+msgid "Role of new users"
+msgstr "Роль новых пользователей"
+
+#: includes/class-nsl-admin.php:195
+msgid "Redirect after login"
+msgstr "Перенаправление после входа"
+
+#: includes/class-nsl-admin.php:198
+msgid "Leave empty to return the user to the page where the button was clicked."
+msgstr "Оставьте пустым, чтобы вернуть пользователя на страницу, где была нажата кнопка."
+
+#: includes/class-nsl-admin.php:202
+msgid "Show buttons"
+msgstr "Показывать кнопки"
+
+#: includes/class-nsl-admin.php:205
+msgid "On the login form"
+msgstr "На форме входа"
+
+#: includes/class-nsl-admin.php:206
+msgid "On the registration form"
+msgstr "На форме регистрации"
+
+#: includes/class-nsl-admin.php:207
+msgid "Above the comment form for guests"
+msgstr "Над формой комментариев для гостей"
+
+#: includes/class-nsl-admin.php:208
+msgid "On WooCommerce login and registration forms"
+msgstr "На формах входа и регистрации WooCommerce"
+
+#. translators: 1: shortcode, 2: shortcode with attributes.
+#: includes/class-nsl-admin.php:214
+#, php-format
+msgid "Anywhere else: shortcode %1$s, for example %2$s. Use link=\"1\" to let logged-in users link more networks."
+msgstr "В любом другом месте: шорткод %1$s, например %2$s. Добавьте link=\"1\", чтобы вошедшие пользователи могли привязать другие соцсети."
+
+#: includes/class-nsl-admin.php:223
+msgid "Button style"
+msgstr "Стиль кнопок"
+
+#: includes/class-nsl-admin.php:226
+msgid "Icon and text"
+msgstr "Иконка и текст"
+
+#: includes/class-nsl-admin.php:227
+msgid "Icons only"
+msgstr "Только иконки"
+
+#: includes/class-nsl-admin.php:232
+msgid "Other"
+msgstr "Прочее"
+
+#: includes/class-nsl-admin.php:235
+msgid "Use the social network avatar"
+msgstr "Использовать аватар из соцсети"
+
+#: includes/class-nsl-admin.php:236
+msgid "Delete linked accounts data when the plugin is deleted"
+msgstr "Удалять данные привязанных аккаунтов при удалении плагина"
+
+#. translators: 1: plugin version, 2: author name, 3: author site link.
+#: includes/class-nsl-admin.php:249
+#, php-format
+msgid "Nook Social Login %1$s · Author: %2$s · Site: %3$s"
+msgstr "Nook Social Login %1$s · Автор: %2$s · Сайт: %3$s"
+
+#: includes/class-nsl-admin.php:251
+msgid "Gorshkov Sergey Vladimirovich"
+msgstr "Горшков Сергей Владимирович"
+
+#: includes/class-nsl-admin.php:269
+msgid "Active"
+msgstr "Активно"
+
+#: includes/class-nsl-admin.php:272
+msgid "Keys are missing"
+msgstr "Не указаны ключи"
+
+#: includes/class-nsl-admin.php:275
+msgid "Off"
+msgstr "Выключено"
+
+#: includes/class-nsl-admin.php:287
+msgid "Enabled"
+msgstr "Включено"
+
+#: includes/class-nsl-admin.php:291
+msgid "Open the developer console"
+msgstr "Открыть консоль разработчика"
+
+#: includes/class-nsl-admin.php:312
+msgid "Return URL (informational)"
+msgstr "Адрес возврата (для справки)"
+
+#: includes/class-nsl-admin.php:312
+msgid "Redirect URL"
+msgstr "Адрес перенаправления (Redirect URL)"
+
+#: includes/class-nsl-admin.php:315
+msgid "Copy"
+msgstr "Копировать"
+
+#: includes/class-nsl-auth.php:113
+#: includes/class-nsl-auth.php:159
+msgid "This login method is not available."
+msgstr "Этот способ входа недоступен."
+
+#: includes/class-nsl-auth.php:121
+msgid "The link has expired. Please try again."
+msgstr "Срок действия ссылки истёк. Попробуйте ещё раз."
+
+#: includes/class-nsl-auth.php:169
+#: includes/class-nsl-auth.php:420
+msgid "The login session has expired or was opened in another browser. Please try again."
+msgstr "Сессия входа истекла или была открыта в другом браузере. Попробуйте ещё раз."
+
+#. translators: %s: provider name.
+#: includes/class-nsl-auth.php:195
+#, php-format
+msgid "This %s account is already linked to another user."
+msgstr "Этот аккаунт %s уже привязан к другому пользователю."
+
+#. translators: %s: provider name.
+#: includes/class-nsl-auth.php:199
+#, php-format
+msgid "%s account linked."
+msgstr "Аккаунт %s привязан."
+
+#. translators: %s: provider name.
+#: includes/class-nsl-auth.php:217
+#: includes/class-nsl-auth.php:436
+#, php-format
+msgid "An account with this e-mail address already exists. Log in with your password and link %s in your profile."
+msgstr "Аккаунт с этим e-mail уже существует. Войдите с паролем и привяжите %s в профиле."
+
+#: includes/class-nsl-auth.php:225
+msgid "Registration through social networks is disabled on this site. Log in with your password and link the account in your profile."
+msgstr "Регистрация через соцсети на этом сайте отключена. Войдите с паролем и привяжите аккаунт в профиле."
+
+#: includes/class-nsl-auth.php:295
+msgid "Login is not allowed for this account."
+msgstr "Для этого аккаунта вход запрещён."
+
+#: includes/class-nsl-auth.php:430
+msgid "Please enter a valid e-mail address."
+msgstr "Введите корректный e-mail."
+
+#: includes/class-nsl-auth.php:447
+msgid "Enter your e-mail"
+msgstr "Введите e-mail"
+
+#. translators: 1: user name, 2: provider name.
+#: includes/class-nsl-auth.php:467
+#, php-format
+msgid "Hello, %1$s! %2$s did not share your e-mail address. Enter it to finish registration."
+msgstr "Здравствуйте, %1$s! %2$s не передал ваш e-mail. Укажите его, чтобы завершить регистрацию."
+
+#: includes/class-nsl-auth.php:475
+msgid "E-mail"
+msgstr "E-mail"
+
+#: includes/class-nsl-auth.php:480
+msgid "Continue"
+msgstr "Продолжить"
+
+#: includes/class-nsl-buttons.php:125
+msgid "Link a social account"
+msgstr "Привязать соцсеть"
+
+#: includes/class-nsl-buttons.php:125
+msgid "or log in with"
+msgstr "или войдите через"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-buttons.php:137
+#: includes/class-nsl-profile.php:86
+#, php-format
+msgid "Link %s"
+msgstr "Привязать %s"
+
+#. translators: %s: provider name.
+#: includes/class-nsl-buttons.php:139
+#, php-format
+msgid "Log in with %s"
+msgstr "Войти через %s"
+
+#: includes/class-nsl-buttons.php:204
+msgid "or register with"
+msgstr "или зарегистрируйтесь через"
+
+#: includes/class-nsl-buttons.php:224
+msgid "Log in to comment:"
+msgstr "Войдите, чтобы комментировать:"
+
+#: includes/class-nsl-oauth2-provider.php:131
+#: includes/providers/class-nsl-provider-steam.php:142
+msgid "Login was cancelled."
+msgstr "Вход отменён."
+
+#: includes/class-nsl-oauth2-provider.php:137
+msgid "The authorization code is missing."
+msgstr "Отсутствует код авторизации."
+
+#: includes/class-nsl-oauth2-provider.php:149
+#: includes/providers/class-nsl-provider-twitch.php:99
+#: includes/providers/class-nsl-provider-vk.php:140
+msgid "The provider did not return a user ID."
+msgstr "Провайдер не вернул ID пользователя."
+
+#: includes/class-nsl-oauth2-provider.php:194
+msgid "The provider did not return an access token."
+msgstr "Провайдер не вернул токен доступа."
+
+#: includes/class-nsl-plugin.php:73
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/class-nsl-profile.php:46
+msgid "Social accounts"
+msgstr "Социальные сети"
+
+#: includes/class-nsl-profile.php:61
+msgid "Linked:"
+msgstr "Привязано:"
+
+#: includes/class-nsl-profile.php:81
+msgid "Unlink"
+msgstr "Отвязать"
+
+#: includes/class-nsl-profile.php:90
+msgid "Not linked"
+msgstr "Не привязано"
+
+#: includes/class-nsl-profile.php:107
+msgid "Sorry, you are not allowed to edit this user."
+msgstr "У вас нет прав на редактирование этого пользователя."
+
+#: includes/class-nsl-profile.php:116
+msgid "This is the only way to log in to this account. Add an e-mail address first so that a password can be set."
+msgstr "Это единственный способ войти в аккаунт. Сначала укажите e-mail, чтобы можно было задать пароль."
+
+#. translators: %s: provider name.
+#: includes/class-nsl-profile.php:124
+#, php-format
+msgid "%s account unlinked."
+msgstr "Аккаунт %s отвязан."
+
+#. translators: 1: provider name, 2: HTTP status code, 3: error details.
+#: includes/class-nsl-provider.php:195
+#, php-format
+msgid "%1$s returned an error (HTTP %2$d). %3$s"
+msgstr "%1$s вернул ошибку (HTTP %2$d). %3$s"
+
+#: includes/providers/class-nsl-provider-battlenet.php:26
+msgid "Battle.net"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-battlenet.php:42
+#: includes/providers/class-nsl-provider-discord.php:42
+#: includes/providers/class-nsl-provider-google.php:42
+#: includes/providers/class-nsl-provider-twitch.php:42
+msgid "Client ID"
+msgstr "Client ID"
+
+#: includes/providers/class-nsl-provider-battlenet.php:46
+#: includes/providers/class-nsl-provider-discord.php:46
+#: includes/providers/class-nsl-provider-google.php:46
+#: includes/providers/class-nsl-provider-twitch.php:46
+#: includes/providers/class-nsl-provider-yandex.php:46
+msgid "Client secret"
+msgstr "Client secret"
+
+#: includes/providers/class-nsl-provider-battlenet.php:50
+msgid "Region"
+msgstr "Регион"
+
+#: includes/providers/class-nsl-provider-battlenet.php:53
+msgid "Global (America, Europe, Korea, Taiwan)"
+msgstr "Глобальный (Америка, Европа, Корея, Тайвань)"
+
+#: includes/providers/class-nsl-provider-battlenet.php:54
+msgid "China"
+msgstr "Китай"
+
+#: includes/providers/class-nsl-provider-battlenet.php:71
+msgid "Create a client in the Blizzard developer portal and add the redirect URL below. Battle.net does not share e-mail addresses, so new users are asked for one."
+msgstr "Создайте клиент на портале разработчиков Blizzard и добавьте адрес перенаправления ниже. Battle.net не передаёт e-mail, поэтому новых пользователей попросят его указать."
+
+#: includes/providers/class-nsl-provider-discord.php:26
+msgid "Discord"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-discord.php:63
+msgid "Create an application in the Discord Developer Portal, open OAuth2, copy Client ID and Client Secret and add the redirect URL below to Redirects."
+msgstr "Создайте приложение в Discord Developer Portal, откройте OAuth2, скопируйте Client ID и Client Secret и добавьте адрес перенаправления ниже в Redirects."
+
+#: includes/providers/class-nsl-provider-google.php:26
+msgid "Google"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-google.php:63
+msgid "In Google Cloud Console configure the OAuth consent screen, then create an \"OAuth client ID\" of type \"Web application\" and add the redirect URL below to \"Authorized redirect URIs\"."
+msgstr "В Google Cloud Console настройте экран согласия OAuth, затем создайте «Идентификатор клиента OAuth» типа «Веб-приложение» и добавьте адрес перенаправления ниже в «Разрешённые URI перенаправления»."
+
+#: includes/providers/class-nsl-provider-steam.php:28
+msgid "Steam"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-steam.php:44
+msgid "Steam Web API key (optional)"
+msgstr "Ключ Steam Web API (необязательно)"
+
+#: includes/providers/class-nsl-provider-steam.php:46
+msgid "Without a key the nickname and avatar are read from the public community profile."
+msgstr "Без ключа ник и аватар берутся из публичного профиля сообщества."
+
+#: includes/providers/class-nsl-provider-steam.php:69
+msgid "Steam needs no application: just enable it. Steam does not share e-mail addresses, so new users are asked for one. A Web API key is optional."
+msgstr "Для Steam приложение не нужно — просто включите. Steam не передаёт e-mail, поэтому новых пользователей попросят его указать. Ключ Web API необязателен."
+
+#: includes/providers/class-nsl-provider-steam.php:150
+msgid "Invalid response from Steam."
+msgstr "Некорректный ответ от Steam."
+
+#: includes/providers/class-nsl-provider-steam.php:172
+msgid "Steam did not confirm the login."
+msgstr "Steam не подтвердил вход."
+
+#: includes/providers/class-nsl-provider-twitch.php:26
+msgid "Twitch"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-twitch.php:63
+msgid "Register an application in the Twitch developer console (category \"Website Integration\", client type \"Confidential\") and add the redirect URL below as OAuth Redirect URL."
+msgstr "Зарегистрируйте приложение в консоли разработчика Twitch (категория \"Website Integration\", тип клиента \"Confidential\") и добавьте адрес перенаправления ниже как OAuth Redirect URL."
+
+#: includes/providers/class-nsl-provider-vk.php:26
+msgid "VK ID"
+msgstr ""
+
+#: includes/providers/class-nsl-provider-vk.php:42
+msgid "App ID"
+msgstr "ID приложения"
+
+#: includes/providers/class-nsl-provider-vk.php:66
+msgid "Create a \"Web\" application in VK ID for business, enable the e-mail permission, set the base domain of the site and add the redirect URL below to the trusted redirect URLs. Copy the App ID."
+msgstr "Создайте приложение типа «Веб» в VK ID для бизнеса, включите доступ к почте, укажите базовый домен сайта и добавьте адрес перенаправления ниже в доверенные Redirect URL. Скопируйте ID приложения."
+
+#: includes/providers/class-nsl-provider-yandex.php:26
+msgid "Yandex ID"
+msgstr "Яндекс ID"
+
+#: includes/providers/class-nsl-provider-yandex.php:42
+msgid "ClientID"
+msgstr "ClientID"
+
+#: includes/providers/class-nsl-provider-yandex.php:63
+msgid "Create a web service application in Yandex OAuth, grant access to the e-mail address, user name and avatar, and add the redirect URL below as Redirect URI."
+msgstr "Создайте приложение для веб-сервисов в Яндекс OAuth, выдайте доступ к адресу почты, имени пользователя и аватару и добавьте адрес перенаправления ниже как Redirect URI."
