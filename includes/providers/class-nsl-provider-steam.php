@@ -94,8 +94,8 @@ class NookSL_Provider_Steam extends NookSL_Provider {
 	 * @param array $flow Flow data.
 	 */
 	public function authorize_url( array $flow ) {
-		$home     = wp_parse_url( home_url() );
-		$realm    = ( isset( $home['scheme'] ) ? $home['scheme'] : 'https' ) . '://' . $home['host'] . ( isset( $home['port'] ) ? ':' . $home['port'] : '' ) . '/';
+		$base     = wp_parse_url( $this->callback_url() );
+		$realm    = ( isset( $base['scheme'] ) ? $base['scheme'] : 'https' ) . '://' . $base['host'] . ( isset( $base['port'] ) ? ':' . $base['port'] : '' ) . '/';
 		$params   = array(
 			'openid.ns'         => 'http://specs.openid.net/auth/2.0',
 			'openid.mode'       => 'checkid_setup',
