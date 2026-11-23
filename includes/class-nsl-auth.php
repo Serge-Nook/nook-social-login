@@ -55,7 +55,7 @@ class NookSL_Auth {
 			$token,
 			array(
 				'expires'  => time() + DAY_IN_SECONDS,
-				'path'     => COOKIEPATH ? COOKIEPATH : '/',
+				'path'     => SITECOOKIEPATH ? SITECOOKIEPATH : '/',
 				'domain'   => COOKIE_DOMAIN,
 				'secure'   => is_ssl(),
 				'httponly' => true,
