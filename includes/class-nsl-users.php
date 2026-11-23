@@ -105,6 +105,9 @@ class NookSL_Users {
 		if ( '' !== $profile['avatar'] ) {
 			update_user_meta( $user_id, 'nooksl_avatar', esc_url_raw( $profile['avatar'] ) );
 			update_user_meta( $user_id, 'nooksl_avatar_provider', $provider );
+		} elseif ( get_user_meta( $user_id, 'nooksl_avatar_provider', true ) === $provider ) {
+			delete_user_meta( $user_id, 'nooksl_avatar' );
+			delete_user_meta( $user_id, 'nooksl_avatar_provider' );
 		}
 	}
 
