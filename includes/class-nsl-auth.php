@@ -190,6 +190,9 @@ class NookSL_Auth {
 		$linked = NookSL_Users::find( $id, $profile['id'] );
 
 		if ( ! empty( $flow['link_user'] ) ) {
+			if ( get_current_user_id() !== (int) $flow['link_user'] ) {
+				$this->fail( __( 'The link has expired. Please try again.', 'nook-social-login' ) );
+			}
 			if ( $linked && (int) $linked->ID !== (int) $flow['link_user'] ) {
 				/* translators: %s: provider name. */
 				$this->fail( sprintf( __( 'This %s account is already linked to another user.', 'nook-social-login' ), $provider->label() ), $flow );
